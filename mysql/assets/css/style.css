@@ -140,7 +140,6 @@ li {
     margin: 0 auto;
 }
 
-
 /* 헤더 영역 */
 #header {
     text-align: center;
@@ -230,7 +229,6 @@ li {
     margin-bottom: 15px;
 }
 
-
 .main__sample .sample ul {
     padding-left: 15px;
     margin-bottom: 20px;
@@ -247,7 +245,6 @@ li {
     color: red;
     font-style: normal;
 }
-
 
 .main__sample .sample .info {
     padding: 20px;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MySQL</title>
+    <title>MySQL02</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/prism.css">
@@ -19,9 +19,9 @@
             <ul>
                 <li><a href="mysql01.html">MySQL</a></li>
                 <li><a href="mysql02.html">SQL 개념</a></li>
-                <li class="active"><a href="mysql03.html">데이터 베이스</a></li>
+                <li class="active"><a href="mysql03.html">데이터베이스</a></li>
                 <li><a href="mysql04.html">테이블</a></li>
-                <li><a href="mysql05.html">SEKECT</a></li>
+                <li><a href="mysql05.html">SELECT</a></li>
             </ul>
         </nav>
     </header>
@@ -34,8 +34,8 @@
                 <div class="info">
                     show databases;
                 </div>
-                <pre><code class="language-js">mysql> show databasds;
----------------------+
+                <pre><code class="language-js">mysql> show databases;
++--------------------+
 | Database           |
 +--------------------+
 | information_schema |
@@ -43,7 +43,7 @@
 | performance_schema |
 | sys                |
 +--------------------+
-5 rows in set (0.00 sec)</code></pre>
+4 rows in set (0.00 sec)</code></pre>
             </div>
 
             <div id="sample02" class="sample">
@@ -55,14 +55,14 @@
 Query OK, 1 row affected (0.00 sec)
 
 mysql> show databases;
----------------------+
++--------------------+
 | Database           |
 +--------------------+
 | information_schema |
 | mysql              |
 | performance_schema |
 | sys                |
-| test               |
+| test                |
 +--------------------+
 5 rows in set (0.00 sec)</code></pre>
             </div>
@@ -73,24 +73,24 @@ mysql> show databases;
                     drop database 이름;
                 </div>
                 <pre><code class="language-js">mysql> drop database test;
-Query OK, 1 row affected (0.00 sec)
+Query OK, 1 row affected (0.01 sec)
 
-myssql> show databases;
----------------------+
+mysql> show databases;
++--------------------+
 | Database           |
 +--------------------+
 | information_schema |
 | mysql              |
 | performance_schema |
 | sys                |
-|+--------------------+
-5 rows in set (0.00 sec)</code></pre>
++--------------------+
+4 rows in set (0.00 sec)</code></pre>
             </div>
 
             <div id="sample04" class="sample">
                 <h3>데이터베이스 사용하기</h3>
                 <div class="info">
-                    use 이름;
+                    use 이름
                 </div>
                 <pre><code class="language-js">mysql> use test;
 Database changed</code></pre>
@@ -100,12 +100,11 @@ Database changed</code></pre>
     <!-- //main -->
 
     <footer id="footer">
-        <a href="mailto:an83690880@gmail.com">an83690880@gmail.com</a>
+        <a href="mailto:webstoryboy@naver.com">webstoryboy@naver.com</a>
     </footer>
-    <!--//footer  -->
+    <!-- //footer -->
 
     <script src="assets/js/prism.js"></script>
-
 </body>
 
 </html>
