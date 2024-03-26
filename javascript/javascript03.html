@@ -71,15 +71,14 @@
                 <h3>01. 함수 : 선언적 함수</h3>
                 <p>
                     자바스크립트에서 가장 일반적으로 사용되는 함수(function) 정의 방식 중 하나입니다.<br>
-                    이 방식은 function 키워드를 사용하여 함수를 정의하고, 함수의 이름을 지정한 후 중괄호({}) 내에 함수의 동작을 작성합니다.
+                    이 방식은 function 키워드를 사용하여 함수를 정의하고, 함수의 이름을 지정한 후 중괄호'{}' 내에 함수의 동작을 작성합니다.
                 </p>
                 <pre><code>{
-                    function func() {
-                        console.log("01. 함수가 실행되었습니다.")     
-                    }
-                    func();            
-                 
-}</code></pre>
+        function func() {  // 'func' 함수 이름 선언
+        console.log("01. 함수가 실행되었습니다.")    // 콘솔에 결과값 출력 
+        }
+        func();  // 함수 호출
+    }</code></pre>
                 <div class="result">
                     <details>
                         <summary>결과 확인하기</summary>
@@ -94,14 +93,14 @@
             <div id="sample02" class="sample">
                 <h3>02. 함수 : 익명 함수</h3>
                 <p>
-                    함수를 정의할 때 함수 이름을 생략하고 바로 함수를 정의하는 것을 익명 함수라고 합니다.<br>
+                    함수를 정의할 때 함수 이름을 생략하고 바로 정의하는 것을 익명 함수라고 합니다.<br>
                     익명 함수는 주로 변수에 할당되어 사용되거나 다른 함수의 매개변수로 전달될 때 사용됩니다.
                 </p>
                 <pre><code>{
-                    const func = function () {
-                        console.log("02. 함수가 실행되었습니다.")
-                            }
-                    func();
+        const func = function () {  // 'const'라는 상수 안에 'func'라는 함수 선언
+        console.log("02. 함수가 실행되었습니다.")  // 콘솔에 결과값 출력
+        }
+        func();  //  함수 호출
 }</code></pre>
                 <div class="result">
                     <details>
@@ -117,22 +116,22 @@
             <div id="sample03" class="sample">
                 <h3>03. 함수 : 매개변수 함수</h3>
                 <p>
-                    매개변수 함수는 함수가 호출될 때 입력으로 받는 값을 가지고 작업을 수행하는 함수를 의미합니다.<br>
-                    함수 정의 시 괄호 안에 선언되며, 함수가 호출될 때 이 매개변수에 값을 전달하여 함수가 그 값들을 이용하여 작업을 수행하게 됩니다.
+                    매개변수 함수란 함수를 호출할 때 매개변수로 값을 전달받아 실행되는 함수를 의미합니다.<br>
+                    이 함수는 매개변수(parameter)를 통해 입력값을 받아들이고, 이러한 입력값을 처리하여 결과를 반환하거나 특정 동작을 수행할 수 있습니다.<br>
+                    매개변수는 함수를 보다 유연하고 재사용 가능하게 만들며, 코드의 가독성과 유지보수성을 향상시킵니다.
                 </p>
                 <pre><code>{
-                    // 선언적 함수
-                    function func(str) {
-                        console.log(str);
-                    }
-                    func("03. 함수가 실행되었습니다.");
-        
-                    // 익명 함수
-                    const func1 = function (str) {
-                        console.log(str);
-                    }
-                    func1("03. 함수가 실행되었습니다.");
-                   
+        // 선언적 함수
+        function func(str) {    // str은 매개변수(parameter)이며, 이 함수가 호출될 때 전달되는 값을 받아들임
+        console.log(str);      // console.log()를 사용하여 매개변수 str의 값을 출력
+        }
+        func("03. 함수가 실행되었습니다.");  // 함수 호출
+
+        // 익명 함수
+        const func1 = function(str) {   
+        console.log(str);
+        }
+        func1("03. 함수가 실행되었습니다.");
 }</code></pre>
                 <div class="result">
                     <details>
@@ -148,20 +147,20 @@
             <div id="sample04" class="sample">
                 <h3>04. 함수 : 리턴값 함수</h3>
                 <p>
-                    리턴값(return value)을 가지는 함수는 함수가 실행된 후에 호출자(caller)에게 값을 반환하는 함수를 가리킵니다.
+                    리턴값(return value)을 가지는 함수는 함수가 실행된 후에 호출자에게 값을 반환하는 함수를 가리킵니다.
                 </p>
                 <pre><code>{
-                    //선언적 함수
-                    function func() {
-                        return "04. 함수가 실행되었습니다.";
-                    }
-                    console.log(func());
-        
-                    // 익명 함수
-                    const func1 = function () {
-                        return "04. 함수가 실행되었습니다.";
-                    }
-                    console.log(func1());                  
+        //선언적 함수
+        function func() {
+        return "04. 함수가 실행되었습니다.";
+        }
+        console.log(func());
+
+        // 익명 함수
+        const func1 = function () {
+        return "04. 함수가 실행되었습니다.";
+        }
+        console.log(func1());                  
 }</code></pre>
                 <div class="result">
                     <details>
@@ -180,17 +179,17 @@
                     매개변수와 리턴값을 가지는 함수는 함수가 호출될 때 입력값을 받아들이고, 그 값들을 이용하여 작업을 수행한 후 결과값을 반환하는 함수를 말합니다.
                 </p>
                 <pre><code>{
-                    //선언적 함수
-            function func(str) {
-                return str;
-            }
-            console.log(func("05. 함수가 실행되었습니다."));
+        //선언적 함수
+        function func(str) {
+        return str;
+        }
+        console.log(func("05. 함수가 실행되었습니다."));
 
-            // 익명 함수
-            const func1 = function (str) {
-                return str;
-            }
-            console.log(func1("05. 함수가 실행되었습니다."));
+        // 익명 함수
+        const func1 = function(str) {
+        return str;
+        }
+        console.log(func1("05. 함수가 실행되었습니다."));
 }</code></pre>
                 <div class="result">
                     <details>
@@ -207,7 +206,7 @@
                 <h3>화살표 함수 : 선언적 함수</h3>
                 <p>
                     화살표 함수는 함수를 정의하는 데 사용되며, 기본적으로 익명 함수로서 변수에 할당되거나, 다른 함수의 매개변수로 전달될 수 있습니다.
-                    () => { ... } 형태로 작성되며, ()는 매개변수를 받을 수 있고, =>는 함수의 정의를 나타냅니다. 중괄호({}) 내에 함수의 동작이 작성되어 있습니다.
+                    () => { ... } 형태로 작성되며, ()는 매개변수를 받을 수 있고, =>는 함수의 정의를 나타냅니다. 중괄호{} 내에 함수의 동작이 작성되어 있습니다.
                 </p>
                 <pre><code>{
                     // 선언적 함수
