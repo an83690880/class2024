@@ -3,7 +3,6 @@ https://github.com/webs9919
 
 # 오늘의 수업
 [메인 페이지](https://an83690880.github.io/class2024/)   
-
 [자바스크립트](https://an83690880.github.io/class2024/javascript/index.html)      
 [MySQL](https://an83690880.github.io/class2024/mysql/index.html)   
 
