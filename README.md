@@ -12,7 +12,13 @@ https://github.com/webs9919
 [퀴즈01](https://an83690880.github.io/class2024/quiz/quiz01.html)
 - 변수(sonet)
 - 선택자(querySelector)
-- 메서드(innerText(), classList, addEventListener, if문)
+- 메서드(innerText(), classList.remove, addEventListener, if문)
+
+[퀴즈02](https://an83690880.github.io/class2024/quiz/quiz01.html)
+- 배열, 객체
+- 선택자(querySelectorAll())
+- 반복문(for(), forEach())
+- 메서드(innerText(), classList.add, addEventListener, if문)
 
 # VSCODE 확장 프로그램
 Live Server : 웹페이지 미리보기   

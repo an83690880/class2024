@@ -197,6 +197,62 @@ body::after {
     line-height: 1.4;
 }
 
+.quiz__main .chocies {
+    margin-bottom: 20px;
+}
+
+.quiz__main .chocies label {
+    display: block;
+    width: 100%;
+}
+
+.quiz__main .chocies label span {
+    border: 1px solid #999797;
+    padding: 17px;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.quiz__main .chocies label span:hover {
+    border-color: #2b252b;
+    color: #c08ec5;
+    box-shadow: 1px 1px 5px #ce07e027;
+}
+
+.quiz__main .chocies label span::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px #e2dfe4;
+    margin-right: 13px;
+    transition: all 0.3;
+}
+
+.quiz__main .chocies label input:checked+span::before {
+    box-shadow: inset 0 0 0 9px #1b171d;
+}
+
+.quiz__main .chocies label input:checked+span {
+    border-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 5px #000;
+    background-color: #fff;
+}
+
+.quiz__main .chocies label input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
 .quiz__main .input input {
     width: 100%;
     padding: 20px;
@@ -217,6 +273,7 @@ body::after {
     line-height: 1.5;
     margin-bottom: 10px;
 }
+
 
 .quiz__main .answer::before {
     content: '🎈정답 : ';
