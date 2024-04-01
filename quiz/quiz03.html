@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>퀴즈 03</title>
+    <title>Quiz03</title>
     <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
 
@@ -35,25 +35,25 @@
                     <div class="question">
                     </div>
                     <div class="chocies">
-                        <label for="choice1">
+                        <label for="choice1" class="choices">
                             <input type="radio" id="choice1" name="chocie" value="1">
                             <span></span>
                         </label>
-                        <label for="choice2">
+                        <label for="choice2" class="choices">
                             <input type="radio" id="choice2" name="chocie" value="2">
                             <span></span>
                         </label>
-                        <label for="choice3">
+                        <label for="choice3" class="choices">
                             <input type="radio" id="choice3" name="chocie" value="3">
                             <span></span>
                         </label>
-                        <label for="choice4">
+                        <label for="choice4" class="choices">
                             <input type="radio" id="choice4" name="chocie" value="4">
                             <span></span>
                         </label>
                     </div>
-                    <div class="answer"></div>
-                    <div class="desc"></div>
+                    <div class="answer none"></div>
+                    <div class="desc none"></div>
                 </div>
                 <div class="quiz__footer">
                     <button class="confirm">정답 확인하기</button>
@@ -72,12 +72,12 @@
         // 선택자
         const quizWrap = document.querySelector(".quiz__wrap");
         const quizHeader = quizWrap.querySelector(".quiz__header");
-        const quizNum = quizWrap.querySelector(".quiz__main .question em");
         const quizQuestion = quizWrap.querySelector(".quiz__main .question");
-        const quizChoices = quizWrap.querySelector(".quiz__main .choices");
         const quizAnswer = quizWrap.querySelector(".quiz__main .answer");
         const quizDesc = quizWrap.querySelector(".quiz__main .desc");
         const quizConfirm = quizWrap.querySelector(".quiz__footer .confirm");
+        const quizChoices = quizWrap.querySelectorAll(".quiz__main .choices span");
+        const quizSelects = quizWrap.querySelectorAll(".quiz__main .choices input");
 
         // 문제 정보
         const quizInfo = {
@@ -92,7 +92,47 @@
 
         // 문제 출력
         quizHeader.innerHTML = quizInfo.date + " " + quizInfo.type;
-        quizQuestion.innerHTML = quizInfo.num + " " + quizInfo.question;
+        quizQuestion.innerHTML = quizInfo.num + ". " + quizInfo.question;
+        quizAnswer.innerHTML = quizInfo.answer;
+        quizDesc.innerHTML = quizInfo.desc;
+        // console.log(quizChoices[0])
+
+        // quizChoices[0].innerHTML = quizInfo.choices[0]
+        // quizChoices[1].innerHTML = quizInfo.choices[1]
+        // quizChoices[2].innerHTML = quizInfo.choices[2]
+        // quizChoices[3].innerHTML = quizInfo.choices[3]
+
+        for (let i = 0; i < quizChoices.length; i++) {
+            quizChoices[i].innerHTML = quizInfo.choices[i]
+        }
+
+        // 보기 선택
+        quizConfirm.addEventListener("click", () => {
+            let seletedChoice = null;
+
+            for (let i = 0; i < quizSelects.length; i++) {
+                if (quizSelects[i].checked) {
+
+                    seletedChoice = quizSelects[i].value;
+                    break;
+                }
+            }
+
+            // 정답 확인
+            if (seletedChoice !== null) {
+                if (seletedChoice == quizInfo.answer) {
+                    alert("정답입니다.");
+                    quizDesc.classList.remove("none");
+                } else {
+                    alert("오답입니다.")
+                    quizAnswer.classList.remove("none");
+                    quizDesc.classList.remove("none");
+                }
+            } else {
+                alert("보기를 선택해주세요!!");
+            }
+        });
+
     </script>
 </body>
 

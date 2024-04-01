@@ -114,7 +114,7 @@ Query OK, 0 rows affected (0.01 sec)
                 <div class="info">
                     SELECT [필드명] FROM [테이블.앨리어스] JOIN [테이블.앨리어스] ON [기준이 되는 조건문]
                 </div>
-                <pre><code class="language-js">mysql> SELECT m.youName, m.youAge, r.youText, r.regTime FROM members m JOIN reviews r ON (m.memberID = r.memberID);  // 필요한 필드명 적어준것 앞에m은 멤버스를 지칭
+                <pre><code class="language-js">mysql> SELECT m.youName, m.youAge, r.youText, r.regTime FROM members m JOIN reviews r ON (m.memberID = r.memberID);  // 필요한 필드명 적고 앞에m은 멤버스를 지칭
     +---------+--------+---------------------------------------+------------+
     | youName | youAge | youText                               | regTime    |
     +---------+--------+---------------------------------------+------------+

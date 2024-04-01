@@ -184,6 +184,8 @@ body::after {
 
 .quiz__main .question {
     margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.4;
 }
 
 .quiz__main .question em {
@@ -234,7 +236,7 @@ body::after {
 }
 
 .quiz__main .chocies label input:checked+span::before {
-    box-shadow: inset 0 0 0 9px #1b171d;
+    box-shadow: inset 0 0 0 9px #cfc1d6;
 }
 
 .quiz__main .chocies label input:checked+span {
