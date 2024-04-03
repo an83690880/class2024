@@ -14,11 +14,25 @@ https://github.com/webs9919
 - 선택자(querySelector)
 - 메서드(innerText(), classList.remove, addEventListener, if문)
 
-[퀴즈02](https://an83690880.github.io/class2024/quiz/quiz01.html)
+[퀴즈02](https://an83690880.github.io/class2024/quiz/quiz02.html)
 - 배열, 객체
 - 선택자(querySelectorAll())
 - 반복문(for(), forEach())
 - 메서드(innerText(), classList.add, addEventListener, if문)
+
+[퀴즈03](https://an83690880.github.io/class2024/quiz/quiz03.html)
+- 변수, 배열, 객체
+- 선택자(querySelector), 선택자(querySelectorAll())
+- 반복문(for(), break문)
+- 메서드(innerHTML(), classList.add, addEventListener, if문)
+
+
+[퀴즈04](https://an83690880.github.io/class2024/quiz/quiz04.html)
+- 변수, 배열, 객체, 템플릿 리터럴
+- 선택자(querySelector), 선택자(querySelectorAll())
+- 반복문(forEach())
+- 메서드(join(), push(), innerHTML())
+
 
 # VSCODE 확장 프로그램
 Live Server : 웹페이지 미리보기   

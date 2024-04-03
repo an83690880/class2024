@@ -35,33 +35,34 @@
                 <li><a href="#">04. 함수 : 리턴값 함수</a></li>
                 <li><a href="#">05. 함수 : 매개변수 + 리턴값 함수</a></li>
 
-                <li><a href="#">05. 화살표 함수 : 선언적 함수</a></li>
-                <li><a href="#">05. 화살표 함수 : 익명 함수</a></li>
-                <li><a href="#">05. 화살표 함수 : 매개변수 함수</a></li>
-                <li><a href="#">05. 화살표 함수 : 리턴값 함수</a></li>
-                <li><a href="#">05. 화살표 함수 : 매개변수 + 리턴값 함수</a></li>
+                <li><a href="#">06. 화살표 함수 : 선언적 함수</a></li>
+                <li><a href="#">07. 화살표 함수 : 익명 함수</a></li>
+                <li><a href="#">08. 화살표 함수 : 매개변수 함수</a></li>
+                <li><a href="#">09. 화살표 함수 : 리턴값 함수</a></li>
+                <li><a href="#">10. 화살표 함수 : 매개변수 + 리턴값 함수</a></li>
 
-                <li><a href="#">05. 함수 유형 : 함수와 매개변수를 이용한 형태</a></li>
-                <li><a href="#">05. 함수 유형 : 함수와 변수를 이용한 형태</a></li>
-                <li><a href="#">05. 함수 유형 : 함수와 배열을 이용한 형태</a></li>
-                <li><a href="#">05. 함수 유형 : 함수와 객체를 이용한 형태</a></li>
-                <li><a href="#">05. 함수 유형 : 함수와 객체 및 배열을 이용한 형태</a></li>
-                <li><a href="#">05. 함수 유형 : 객체안에 함수를 이용한 형태</a></li>
-                <li><a href="#">05. 함수 유형 : 객체 생성자 함수</a></li>
-                <li><a href="#">05. 함수 유형 : 프로토타입 함수</a></li>
+                <li><a href="#">11. 함수 유형 : 함수와 매개변수를 이용한 형태</a></li>
+                <li><a href="#">12. 함수 유형 : 함수와 변수를 이용한 형태</a></li>
+                <li><a href="#">13. 함수 유형 : 함수와 배열을 이용한 형태</a></li>
+                <li><a href="#">14. 함수 유형 : 함수와 객체를 이용한 형태</a></li>
+                <li><a href="#">15. 함수 유형 : 함수와 객체 및 배열을 이용한 형태</a></li>
+                <li><a href="#">16. 함수 유형 : 객체안에 함수를 이용한 형태</a></li>
+                <li><a href="#">17. 함수 유형 : 객체 생성자 함수</a></li>
+                <li><a href="#">18. 함수 유형 : 프로토타입 함수</a></li>
+                <li><a href="#">19. 함수 유형 : 객체 리터럴 함수</a></li>
 
-                <li><a href="#">05. 함수 : 즉시실행 함수</a></li>
-                <li><a href="#">05. 함수 : 파라미터 함수</a></li>
-                <li><a href="#">05. 함수 : 재귀 함수</a></li>
-                <li><a href="#">05. 함수 : 콜백 함수</a></li>
-                <li><a href="#">05. 함수 : 비동기 방식 : 콜백 함수</a></li>
-                <li><a href="#">05. 함수 : 비동기 방식 : 프로미스</a></li>
-                <li><a href="#">05. 함수 : 비동기 방식 : asyne/await</a></li>
-                <li><a href="#">05. 함수 : 중첩 함수</a></li>
-                <li><a href="#">05. 함수 : 클로저 함수</a></li>
+                <li><a href="#">20. 함수 : 즉시실행 함수</a></li>
+                <li><a href="#">21. 함수 : 파라미터 함수</a></li>
+                <li><a href="#">22. 함수 : 재귀 함수</a></li>
+                <li><a href="#">23. 함수 : 콜백 함수</a></li>
+                <li><a href="#">24. 함수 : 비동기 방식 : 콜백 함수</a></li>
+                <li><a href="#">25. 함수 : 비동기 방식 : 프로미스</a></li>
+                <li><a href="#">26. 함수 : 비동기 방식 : asyne/await</a></li>
+                <li><a href="#">27. 함수 : 중첩 함수</a></li>
+                <li><a href="#">28. 함수 : 클로저 함수</a></li>
 
-                <li><a href="#">05. 클래스 : 기본</a></li>
-                <li><a href="#">05. 클래스 : 상속</a></li>
+                <li><a href="#">29. 클래스 : 기본</a></li>
+                <li><a href="#">30. 클래스 : 상속</a></li>
             </ul>
         </div>
         <!-- //main__menu -->
@@ -355,6 +356,280 @@
                 </div>
             </div>
             <!-- //sample10 -->
+
+            <div id="sample11" class="sample">
+                <h3>11. 함수 유형 : 함수와 매개변수를 이용한 형태</h3>
+                <p>
+                    함수의 입력 값은 매개변수(parameter)를 통해 전달되며, 함수가 작업을 수행한 후에는 그 결과를 반환할 수 있습니다.
+                </p>
+                <pre><code>{        
+        function func(num, str) {
+            console.log(num + "." + str);
+            console.log(`${num}. ${str}`);
+        }
+        func(11, "함수가 실행되었습니다.");        
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            11. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample11 -->
+
+            <div id="sample12" class="sample">
+                <h3>12. 함수 유형 : 함수와 변수를 이용한 형태</h3>
+                <p>
+                    함수 내에서 변수를 정의하고 사용하여 특정 작업을 수행하는 것을 의미합니다. 변수는 함수 내에서만 유효하며, 함수 외부에서는 접근할 수 없습니다.
+                </p>
+                <pre><code>{
+        const num = 12;
+        const str = "함수가 실행되었습니다.";
+
+        function func(num, str) {
+            console.log(`${num}. ${str}`);
+        }
+        func(num, str);                
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            12. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample12 -->
+
+            <div id="sample13" class="sample">
+                <h3>13. 함수 유형 : 함수와 배열을 이용한 형태</h3>
+                <p>
+                    함수를 통해 배열을 조작하고 배열에 대한 작업을 수행하는 방법을 의미합니다. 이 형태는 주로 배열에 대한 반복 작업, 필터링, 매핑 등을 수행할 때 사용됩니다.
+                </p>
+                <pre><code>{
+        const num = [13, 14];
+        const str = ["함수가 실행되었습니다.", "함수가 실행되었습니다."];
+
+        function func(num, str) {
+            console.log(`${num}. ${str}`);
+        }
+        func(num[0], str[0]);
+        func(num[1], str[1]);
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            13. 함수가 실행되었습니다.<br>
+                            14. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample13 -->
+
+            <div id="sample14" class="sample">
+                <h3>14. 함수 유형 : 함수와 객체를 이용한 형태</h3>
+                <p>
+                    함수와 객체를 이용한 형태는 객체에 대한 작업을 수행하기 위해 함수를 사용하는 방법을 의미합니다. 이 형태는 주로 객체의 속성에 접근하거나 객체의 메서드를 호출하여 특정 작업을
+                    수행할 때 사용됩니다.
+                </p>
+                <pre><code>{
+        const info = {
+            num: 15,
+            str: "함수가 실행되었습니다."
+        }
+        function func(num, str) {
+            console.log(`${num}. ${str}`);
+        }
+        func(info.num, info.str);
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            15. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample14 -->
+
+            <div id="sample15" class="sample">
+                <h3>15. 함수 유형 : 함수와 객체 및 배열을 이용한 형태</h3>
+                <p>
+                    함수를 사용하여 객체와 배열을 조작하면 코드를 모듈화하고 재사용할 수 있습니다.
+                </p>
+                <pre><code>{
+        const info = [
+        { num: 16, str: "함수가 실행되었습니다." },
+        { num: 17, str: "함수가 실행되었습니다." },
+        ];
+        function func(num, str) {
+        console.log(`${num}. ${str}`);
+        }
+        func(info[0].num, info[0].str);
+        func(info[1].num, info[1].str);
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            16. 함수가 실행되었습니다.<br>
+                            17. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample15 -->
+
+            <div id="sample16" class="sample">
+                <h3>16. 함수 유형 : 객체안에 함수를 이용한 형태</h3>
+                <p>
+                    객체안에 함수를 이용하여 객체에 해당 데이터를 조작하는 동작(메서드)을 함께 포함할 수 있습니다. 이것은 데이터와 동작을 논리적으로 그룹화하여 코드의 구조를 보다 명확하게 만들고
+                    유지보수성을 향상시킵니다.
+                </p>
+                <pre><code>{
+        const info = {
+            num: 18,
+            str: "함수가 실행되었습니다.",
+            result: () => {
+                console.log(`${info.num}. ${info.str}`);
+            }
+        }
+        info.result();
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            18. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample16 -->
+
+            <div id="sample17" class="sample">
+                <h3>17. 함수 유형 : 객체 생성자 함수</h3>
+                <p>
+                    객체 생성자 함수는 JavaScript에서 객체를 생성하는 데 사용되는 함수입니다. 객체 생성자 함수를 사용하여 동일한 유형의 여러 객체를 생성할 수 있으며, 각 객체는 생성자
+                    함수 내에서 정의된 속성과 메서드를 가질 수 있습니다. 일반적으로 객체 생성자 함수는 대문자로 시작하여 PascalCase 표기법을 따르는 관례를 따릅니다.
+                </p>
+                <pre><code>{
+        // 함수 정의
+        function Func(num, str) {
+            this.num = num;
+            this.str = str;
+            this.result = () => {
+                console.log(`${this.num}. ${this.str}`);
+            }
+        }
+        // 인스턴스 생성
+        const info1 = new Func(19, "함수가 실행되었습니다.");
+        const info2 = new Func(20, "함수가 실행되었습니다.");
+
+        // 호출
+        info1.result();
+        info2.result();
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            19. 함수가 실행되었습니다.<br>
+                            20. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample17 -->
+
+            <div id="sample18" class="sample">
+                <h3>18. 함수 유형 : 프로토타입 함수</h3>
+                <p>
+                    모든 JavaScript 객체는 프로토타입(prototype)이라고 불리는 다른 객체를 가지고 있습니다. 이 프로토타입은 해당 객체가 상속(inheritance)할 수 있는 속성과
+                    메서드를 정의합니다. 프로토타입 함수는 이러한 프로토타입을 활용하여 모든 객체가 공유하는 메서드를 정의할 때 사용됩니다. 일반적으로 이러한 함수는 객체의 생성자 함수(생성자)의
+                    프로토타입 객체에 메서드를 추가하는 형태로 작성됩니다.
+                </p>
+                <pre><code>{
+        // 함수 정의
+        function Func(num, str) {
+            this.num = num;
+            this.str = str;
+        }
+
+        // 메서드 추가
+        Func.prototype.result = function () {
+            console.log(`${this.num}. ${this.str}`);
+        }
+
+        // 인스턴스 생성
+        const info1 = new Func(21, "함수가 실행되었습니다.");
+        const info2 = new Func(22, "함수가 실행되었습니다.");
+
+        // 호출
+        info1.result();
+        info2.result();
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            21. 함수가 실행되었습니다.<br>
+                            22. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample18 -->
+
+            <div id="sample19" class="sample">
+                <h3>19. 함수 유형 : 객체 리터럴 함수 </h3>
+                <p>
+                    객체 리터럴 함수는 일반적으로 객체를 생성하는 함수를 가리킵니다. 이 함수는 객체 리터럴 문법을 사용하여 새로운 객체를 만들고 반환합니다. 자바스크립트에서 객체는 속성(프로퍼티)과
+                    해당 속성에 연결된 동작(메서드)의 집합으로, 객체 리터럴 함수는 새로운 객체를 생성하고 그것의 속성과 메서드를 정의하는 데 사용됩니다.
+                </p>
+                <pre><code>{
+        // 함수 정의
+        function Func(num, str) {
+            this.num = num;
+            this.str = str;
+        }
+
+        // 메서드 추가
+        Func.prototype = {
+            result1: function () {
+                console.log(`${this.num}. ${this.str}`);
+            },
+            result2: function () {
+                console.log(`${this.num}. ${this.str}`);
+            }
+        }
+
+        // 인스턴스 생성
+        const info1 = new Func(23, "함수가 실행되었습니다.");
+        const info2 = new Func(24, "함수가 실행되었습니다.");
+
+        // 호출
+        info1.result1();
+        info2.result2();
+}</code></pre>
+                <div class="result">
+                    <details>
+                        <summary>결과 확인하기</summary>
+                        <div>
+                            23. 함수가 실행되었습니다.<br>
+                            24. 함수가 실행되었습니다.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <!-- //sample19 -->
         </div>
         <!-- //main__sample -->
     </main>
@@ -369,150 +644,6 @@
     <script>hljs.highlightAll();</script>
     <script>
 
-
-        // 01. 함수 : 선언적 함수
-        {
-            function func() {
-                console.log("01. 함수가 실행되었습니다.")
-            }
-            func();
-        }
-
-        // 02. 함수 : 익명 함수
-        {
-            const func = function () {
-                console.log("02. 함수가 실행되었습니다.")
-
-            }
-            func();
-        }
-
-        // 03. 함수 : 매개변수 함수
-        {
-            // 선언적 함수
-            function func(str) {
-                console.log(str);
-            }
-            func("03. 함수가 실행되었습니다.");
-
-            // 익명 함수
-            const func1 = function (str) {
-                console.log(str);
-            }
-            func1("03. 함수가 실행되었습니다.");
-        }
-
-        // 04. 함수 : 리턴값 함수
-        {
-            //선언적 함수
-            function func() {
-                return "04. 함수가 실행되었습니다.";
-            }
-            console.log(func());
-
-            // 익명 함수
-            const func1 = function () {
-                return "04. 함수가 실행되었습니다.";
-            }
-            console.log(func1());
-        }
-
-        // 05. 함수 :  매개변수 + 리턴값 함수
-        {
-            //선언적 함수
-            function func(str) {
-                return str;
-            }
-            console.log(func("05. 함수가 실행되었습니다."));
-
-            // 익명 함수
-            const func1 = function (str) {
-                return str;
-            }
-            console.log(func1("05. 함수가 실행되었습니다."));
-        }
-
-        // 06. 화살표 함수 : 선언적 함수
-        {
-            // 선언적 함수
-            function func() {
-                console.log("06. 함수가 실행되었습니다.");
-            }
-            func();
-
-            func1 = () => {   // 화살표 함수로 변경
-                console.log("06. 함수가 실행되었습니다.");
-            }
-            func1();
-        }
-
-        // 07. 화살표 함수 : 익명 함수
-        {
-            // 익명 함수
-            const func = function () {
-                console.log("07. 함수가 실행되었습니다.")
-            };
-            func();
-
-            // 익명 함수 --> 화살표 함수
-            const func1 = () => {
-                console.log("07. 함수가 실행되었습니다.")
-            };
-            func1();
-        }
-
-        // 08. 화살표 함수 : 매개변수 함수
-        {
-            // 선언적 함수
-            func = (str) => {
-                console.log(str);
-            }
-            func("08. 함수가 실행되었습니다.");
-
-            // 익명 함수
-            const func1 = (str) => {
-                console.log(str)
-            }
-        }
-
-        // 09. 화살표 함수 : 리턴값(결과, 종료)
-        {
-            // 선언적 함수
-            func = () => {
-                return "09. 함수가 실행되었습니다.";
-            }
-            console.log(func());
-
-            // 익명 함수
-            const func1 = () => {
-                return "09. 함수가 실행되었습니다.";
-            }
-            console.log(func1());
-        }
-
-        // 10. 화살표 함수 : 매개변수 + 리턴값
-        {
-            // 익명 함수(화살표 함수) + 매개변수 + 리턴값
-            const func = (str) => {
-                return str;
-            }
-            console.log("10.함수가 실행되었습니다.")
-
-            // 매개변수 하나이면 괄호 생략 가능
-            const func2 = str => {
-                return str;
-            }
-            console.log(runc2("10.함수가 실행되었습니다."));
-
-            // 리턴 생략
-            const func3 = str => str;
-            console.log(func3("10.함수가 실행되었습니다."));
-
-            // 선언적 함수(가독성 떨어져서 사용 잘 안함)
-            func4 = str => str;
-            console.log(func3("10.함수가 실행되었습니다."));
-
-        }
     </script>
 </body>
 

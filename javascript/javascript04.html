@@ -29,15 +29,178 @@
     <main id="main">
         <div class="main__menu container">
             <ul>
-                <li><a href="#">01.변수 : 데이터 저장</a></li>
-
+                <li><a href="#">01. if문</a></li>
+                <li><a href="#">02. 다중 if문</a></li>
+                <li><a href="#">03. 중첩 if문</a></li>
+                <li><a href="#">04. if문 생략 & 삼항 연산자</a></li>
+                <li><a href="#">05. switch문</a></li>
+                <li><a href="#">06. while문</a></li>
+                <li><a href="#">07. do while문</a></li>
+                <li><a href="#">08. for문</a></li>
+                <li><a href="#">09. 중첩 for문</a></li>
+                <li><a href="#">10. break문</a></li>
+                <li><a href="#">11. continue문</a></li>
 
             </ul>
         </div>
-        <!-- //main__menu -->
+        <!--//main__menu  -->
+
+        <script>
+
+            // 01. if문(조건식)
+            {
+                // true, "문자열". 1, 2, "1", "2", [], {}
+                // false, ""(빈문자열), 0, null, undefind 
+                if ("") {
+                    console.log("실행되었습니다.(true)");
+                } else {
+                    console.log("실행되었습니다.(false)");
+                }
+            }
+
+            // 02. 다중 if문
+            {
+                const num = 100;
+
+                if (num == 90) {
+                    console.log("실행되었습니다.(90)");
+                } else if (num == 100) {
+                    console.log("실행되었습니다(100)");
+                } else if (num == 110) {
+                    console.log("실행되었습니다(110)");
+                } else if (num == 120) {
+                    console.log("실행되었습니다(120)");
+                } else if (num == 130) {
+                    console.log("실행되었습니다(130)");
+                } else {
+                    console.log("실행되었습니다.");
+                }
+            }
+
+            // 03. 중첩 if문
+            {
+                const num = 100;
+
+                if (num == 100) {
+                    console.log("실행되었습니다.1");
+                    if (num == 100) {
+                        console.log("실행되었습니다.2");
+                        if (num == 100) {
+                            console.log("실행되었습니다.3");
+                        }
+                    }
+                } else {
+                    console.log("실행되었습니다.4");
+                }
+            }
+
+            // 04. if문 생략 & 삼항 연산자 (!!젤 중요)
+            {
+                const num = 100;
+
+                if (num == 100) {
+                    console.log("true");
+                }
+                if (num == 100) console.log("true");
+
+                // 생략
+                if (num == 100) console.log("true");
+
+                if (num == 100) {
+                    console.log("true");
+                } else {
+                    console.log("false");
+                }
+
+                // 삼항 연산자(조건식 연산자)
+                num == 100 ? console.log("true") : console.log("false")
+            }
+
+            // 05. 
+            {
+                const num = 100;
+
+                switch (num) {
+                    case 90:
+                        console.log("실행되었습니다.1");
+                        break;
+                    case 95:
+                        console.log("실행되었습니다.2");
+                        break;
+                    case 100:
+                        console.log("실행되었습니다.3");
+                        break;
+                    case 105:
+                        console.log("실행되었습니다.4");
+                        break;
+                }
+            }
+
+            // 06. while문
+            {
+                let num = 1;  // 초기값
+
+                while (num <= 10) {  // 조건식
+                    console.log(num);  // // 1,2,3,4,5,6,7,8,9,10 정답
+                    num++;  // 증감값
+                }
+            }
+
+            // 07. do while문
+            {
+                let num = 1; // 초기값
+
+                do {
+                    console.log(num);  // 1,2,3,4,5,6,7,8,9,10 정답
+                    num++;  // 증감값   
+                } while (num <= 10);  // 조건식          
+
+            }
+
+            // 08. for문
+            {
+                for (let i = 1; i <= 10; i++) {  //초기값 조건식 증감값
+                    console.log(i);  // 1,2,3,4,5,6,7,8,9,10 정답
+                }
+            }
+
+            // 09.  중첩 for문
+            {
+                for (let i = 1; i <= 10; i++) {  //초기값 조건식 증감값
+                    for (let j = 1; j <= 10; j++) {
+                        console.log(i, j);
+                    }
+                }
+            }
+            // 10. break문
+            {
+                for (let i = 1; i < 10; i++) {
+                    if (i == 5) {
+                        break;
+                    }
+                    console.log(i)  // 1,2,3,4 정답
+                }
+            }
+
+            // 11. continue문
+            {
+                for (let i = 1; i <= 10; i++) {
+                    if (i == 5) {
+                        continue;
+                    }
+                    console.log(i)  // 1,2,3,4,6,7,8,9,10 정답
+                }
+            }
+
+
+
+
+
+
 
 
         </script>
 </body>
+
 
 </html>
