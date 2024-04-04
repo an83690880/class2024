@@ -13,26 +13,76 @@
 
         #wrap {
             width: 1200px;
-            background-color: #645c5c;
+            margin: 0 auto;
+        }
+
+        #header {
+            width: 100%;
             display: flex;
         }
 
-        #herder {
-            width: 100%;
+        #header .logo {
+            width: 20%;
             height: 100px;
-            background-color: #a19d9d;
+            background-color: #efefef;
         }
 
-        #main {
+        #header .nav {
+            width: 80%;
+            height: 100px;
+            background-color: #e3e3e3;
+        }
+
+        #slider {
             width: 100%;
-            height: 500px;
-            background-color: #746f6f;
+            height: 300px;
+            background-color: #e3e3e3;
+        }
+
+        #contents {
+            width: 100%;
+            display: flex;
+        }
+
+        #contents .content1 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #d1d1d1;
+        }
+
+        #contents .content2 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #c7c7c7;
+        }
+
+        #contents .content3 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #bcbcbc;
         }
 
         #footer {
             width: 100%;
+            display: flex;
+        }
+
+        #footer .footer1 {
+            width: 20%;
             height: 100px;
-            background-color: #a19d9d;
+            background-color: #b1b1b1;
+        }
+
+        #footer .footer2 {
+            width: 60%;
+            height: 100px;
+            background-color: #a3a3a3;
+        }
+
+        #footer .footer3 {
+            width: 20%;
+            height: 100px;
+            background-color: #9d9d9d;
         }
     </style>
 </head>
@@ -43,9 +93,23 @@
             <div class="logo"></div>
             <div class="nav"></div>
         </herder>
+        <!-- //herder -->
         <article id="slider"></article>
-        <main id="main"></main>
-        <footer id="footer"></footer>
+        <!-- //slider -->
+
+        <main id="contents">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </main>
+        <!-- //contents -->
+
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </footer>
+        <!-- //footer -->
     </div>
 </body>
 
