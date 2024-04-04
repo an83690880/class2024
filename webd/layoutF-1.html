@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #herder {
+            width: 100%;
+            height: 100px;
+        }
+
+        #herder .conatiner {
+            display: flex;
+        }
+
+        #herder .conatiner .logo {
+            width: 20%;
+            height: 100px;
+            background-color: #807b7b;
+        }
+
+        #herder .conatiner .nav {
+            width: 80%;
+            height: 100px;
+            background-color: #615d5d;
+        }
+
+        #slider {
+            width: 100%;
+            height: 350px;
+            background-color: #706d6d;
+            position: relative;
+        }
+
+        #slider .links {
+            width: 1340px;
+            height: 100px;
+            background-color: #534848;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+
+        #contents {
+            width: 100%;
+            height: 400px;
+        }
+
+        #contents .conatiner .banner {
+            height: 100px;
+            background-color: #351010;
+        }
+
+        #contents .conatiner .notice {
+            height: 300px;
+            background-color: #1f1111;
+        }
+
+
+        #footer {
+            width: 100%;
+            height: 120px;
+        }
+
+        .conatiner {
+            width: 1340px;
+            margin: 0 auto;
+            height: inherit;
+            background-color: #554a4a;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <herder id="herder">
+            <div class="conatiner">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </div>
+        </herder>
+        <!-- //herder -->
+
+        <article id="slider">
+            <div class="links"></div>
+        </article>
+        <!-- //slider -->
+
+        <section id="contents">
+            <div class="conatiner">
+                <article class="banner"></article>
+                <article class="notice"></article>
+            </div>
+        </section>
+        <!-- //contents -->
+        <footer id="footer">
+            <div class="conatiner"></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+
+</html>
