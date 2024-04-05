@@ -644,6 +644,218 @@
     <script>hljs.highlightAll();</script>
     <script>
 
+        // 01.함수 : 선언적 함수
+        {
+            function test() {
+                console.log("01.함수 : 선언적 함수")
+            }
+            test();
+        }
+        // 02.함수 : 익명 함수
+        {
+            const test = function () {
+                console.log("02.함수 : 익명 함수")
+            }
+            test();
+        }
+        // 03.함수 : 매개변수 함수
+        {
+            function test(str) {
+                console.log(str)
+            }
+            test("03.함수 : 매개변수 함수")
+            const test1 = function (str) {
+                console.log(str)
+            }
+            test1("03.함수 : 매개변수 함수");
+        }
+        // 04.함수 : 리턴값 함수
+        {
+            function test() {
+                return "04.함수 : 리턴값 함수"
+            }
+            console.log(test());
+            const test1 = function () {
+                return "04.함수 : 리턴값 함수"
+            }
+            console.log(test1());
+        }
+        // 05.함수 : 매개변수 + 리턴값 함수
+        {
+            function test(str) {
+                return str;
+            }
+            console.log(test("05.함수 : 매개변수 + 리턴값 함수"))
+            const test1 = function (str) {
+                return str;
+            }
+            console.log(test1("05.함수 : 매개변수 + 리턴값 함수"))
+        }
+        // 06. 화살표함수 : 선언적 함수
+        {
+            test = () => {
+                console.log("06. 화살표함수 : 선언적 함수")
+            }
+            test();
+        }
+        // 07.화살표함수 : 익명 함수
+        {
+            const test = () => {
+                console.log("07.화살표함수 : 익명 함수")
+            }
+            test();
+        }
+        // 08.화살표함수 : 매개변수 함수
+        {
+            test = (str) => {
+                console.log(str)
+            }
+            test("08.화살표함수 : 매개변수 함수")
+        }
+        // 09.화살표함수 : 리턴값 함수
+        {
+            test = () => {
+                return "09.화살표함수 : 리턴값 함수"
+            }
+            console.log(test());
+        }
+        // 10.화살표함수 : 매개변수 + 리턴값 함수
+        {
+            test = (str) => {
+                return str;
+            }
+            console.log(test("10.화살표함수 : 매개변수 + 리턴값 함수"))
+        }
+        // 11. 함수 유형: 함수와 매개변수를 이용한 형태
+        {
+            function func(num, str) {
+                console.log(num + ". " + str);
+                console.log(`${num}. ${str}`);
+            }
+            func(11, "함수가 실행되었습니다.");
+        }
+        // 12. 함수 유형: 함수와 변수를 이용한 형태
+        {
+            const num = 12;
+            const str = "함수가 실행되었습니다.";
+            function func(num, str) {
+                console.log(`${num}. ${str}`);
+            }
+            func(num, str);
+        }
+        // 13. 함수 유형: 함수와 배열을 이용한 형태
+        {
+            const num = [13, 14];
+            const str = ["함수가 실행되었습니다.", "함수가 실행되었습니다."];
+            function func(num, str) {
+                console.log(`${num}. ${str}`);
+            }
+            func(num[0], str[0]);
+            func(num[1], str[1]);
+        }
+        // 14. 함수 유형: 함수와 객체를 이용한 형태
+        {
+            const info = {
+                num: 15,
+                str: "함수가 실행되었습니다."
+            }
+            function func(num, str) {
+                console.log(`${num}. ${str}`);
+            }
+            func(info.num, info.str);
+        }
+        // 15. 함수 유형: 함수와 객체 및 배열을 이용한 형태
+        {
+            const info = [
+                { num: 16, str: "함수가 실행되었습니다" },
+                { num: 17, str: "함수가 실행되었습니다" }
+            ]
+            function func(num, str) {
+                console.log(`${num}. ${str}`);
+            }
+            func(info[0].num, info[0].str);
+            func(info[1].num, info[1].str);
+        }
+        // 16. 함수 유형: 객체 안에 함수를 이용한 형태
+        {
+            const info = {
+                num: 18,
+                str: "함수가 실행되었습니다.",
+                result: () => {
+                    console.log(`${info.num}.${info.str}`)
+                }
+            }
+            info.result();
+        }
+        // 17. 함수 유형: 객체 생성자 함수
+        {
+            //함수 정의(this는 여기서 자기자신을 가리킴)
+            function Func(num, str) {
+                this.num = num;
+                this.str = str;
+                this.result = () => {
+                    console.log(`${this.num}.${this.str}`);
+                }
+            }
+            //인스턴스 생설
+            const info1 = new Func(19, "함수가 실행되었습니다.");
+            const info2 = new Func(20, "함수가 실행되었습니다.");
+            //호출
+            info1.result();
+            info2.result();
+        }
+        // 18. 함수 유형: 프로토타입 함수
+        {
+            //함수 정의
+            function Funs(num, str) {
+                this.num = num;
+                this.str = str;
+            }
+            //메서드 추가
+            Funs.prototype.result = function () {
+                console.log(`${this.num}.${this.str}`);
+            }
+            //인스턴스 생설
+            const info1 = new Func(21, "함수가 실행되었습니다.");
+            const info2 = new Func(22, "함수가 실행되었습니다.");
+            //호출
+            info1.result();
+            info2.result();
+        }
+        // 19. 함수 유형: 객체리터럴 함수
+        {
+            //함수 정의
+            function Funs(num, str) {
+                this.num = num;
+                this.str = str;
+            }
+            //메서드 추가
+            Func.prototype = {
+                result1: function () {
+                    console.log(`${this.num}.${this.str}`);
+                },
+                result2: function () {
+                    console.log(`${this.num}.${this.str}`);
+                }
+            }
+            //인스턴스 생설
+            const info1 = new Func(23, "함수가 실행되었습니다.");
+            const info2 = new Func(24, "함수가 실행되었습니다.");
+            //호출
+            info1.result1();
+            info2.result2();
+        }
+        // 20. 함수: 즉시실행 함수
+        // 21. 함수: 파라미터 함수
+        // 22. 함수: 재귀 함수
+        // 23. 함수: 콜백 함수
+        // 24. 함수: 비동기 방식: 콜백 함수
+        // 25. 함수: 비동기 방식: 프로미스
+        // 26. 함수: 비동기 방식: asyne / await
+        // 27. 함수: 중첩 함수
+        // 28. 함수: 클로저
+        // 29. 클래스: 기본
+        // 30. 클래스: 상속
     </script>
 </body>
 
