@@ -81,6 +81,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     background-image: url(../img/bg01.jpg);
     width: 100%;
@@ -315,7 +316,7 @@ body::after {
 }
 
 .quiz__footer .next {
-    background-color: #412E91;
+    background-color: #5a45ac;
     color: #fff;
     width: 100%;
     padding: 20px;
@@ -328,27 +329,19 @@ body::after {
 
 .quiz__footer .next:hover {
     background-color: transparent;
-    border: 1px dashed #412E91;
-    color: #412E91;
+    border: 1px dashed #5a45ac;
+    color: #5a45ac;
     cursor: pointer;
 }
-
-
 
 /* good, bad */
 .quiz__wrap .quiz.good {
     position: relative;
 }
 
-.quiz__wrap .quiz.bad {
-    position: relative;
-}
-
-
-
 .quiz__wrap .quiz.good::before {
     content: '';
-    width: 150px;
+    width: 130px;
     height: 130px;
     border: 10px solid red;
     border-radius: 50%;
@@ -358,9 +351,13 @@ body::after {
     z-index: 100;
 }
 
+.quiz__wrap .quiz.bad {
+    position: relative;
+}
+
 .quiz__wrap .quiz.bad::before {
     content: '';
-    width: 160px;
+    width: 170px;
     height: 10px;
     background-color: red;
     position: absolute;
@@ -373,7 +370,7 @@ body::after {
 
 .quiz__wrap .quiz.bad::after {
     content: '';
-    width: 160px;
+    width: 170px;
     height: 10px;
     background-color: red;
     position: absolute;
@@ -382,4 +379,27 @@ body::after {
     border-radius: 30px;
     transform: rotate(-45deg);
     z-index: 100;
+}
+
+.quiz__check {
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    line-height: 94px;
+    text-align: center;
+    background-color: #412E91;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 3px solid #B8A8FF;
+    transition: all 0.3s ease;
+}
+
+.quiz__check:hover {
+    border: 3px solid #412E91;
+    background-color: #E6E0FF;
+    color: #412E91;
 }
